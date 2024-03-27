@@ -30,5 +30,7 @@ public class FestaFerragnez {
         } else {
             System.out.println("Mi dispiace, non sei sulla lista degli invitati.");
         }
+
+        scan.close();
     }
 }
