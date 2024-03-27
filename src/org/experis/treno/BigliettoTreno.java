@@ -25,14 +25,15 @@ public class BigliettoTreno {
         userAge = scan.nextInt();
         // calcolo il prezzo del biglietto senza sconto
         double PriceWoDisc = priceXKm * desireKm;
+        System.out.println(PriceWoDisc);
         // dichiaro variabile prezzo finale
         double endPrice;
         // calcolo il prezzo in base alla casistica di sconto
 
         if(userAge < minUserAge) {
-            endPrice = (PriceWoDisc * 100) / juniorDisc;
+            endPrice = PriceWoDisc - ((PriceWoDisc * (double) juniorDisc) / 100);
         } else if (userAge > maxUserAge) {
-            endPrice = (PriceWoDisc * 100) / seniorDisc;
+            endPrice = PriceWoDisc - ((PriceWoDisc * (double) seniorDisc) / 100);
         } else {
             endPrice = PriceWoDisc;
         }
