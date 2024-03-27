@@ -39,5 +39,7 @@ public class BigliettoTreno {
         }
 
         System.out.println("Il prezzo del tuo biglietto è:" + " " + endPrice);
+
+        scan.close();
     }
 }
