@@ -5,7 +5,7 @@ public class FizzBuzz {
         // faccio ciclio da 100 iterazioni
 
         for (int i = 1; i <= 100; i++) {
-            if((i % 3 == 0) && (i % 5 == 0)) {
+            if((i % 3 == 0) && (i % 5 == 0)) { // || (i % 15 == 0)
                 System.out.println(i + "fizzbuzz");
             } else if (i % 3 == 0) {
                 System.out.println(i + "fizz");
