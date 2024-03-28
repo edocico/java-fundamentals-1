@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class BigliettoTreno {
     public static void main(String[] args) {
         // definisco variabili conosciute e non
-        double priceXKm = 0.21;
-        int minUserAge = 18;
-        int maxUserAge = 65;
+        final double priceXKm = 0.21; // PRICE_PER_KM
+        final int minUserAge = 18;
+        final int maxUserAge = 65;
         double desireKm;
         int userAge;
-        int juniorDisc = 20;
-        int seniorDisc = 40;
+        final int juniorDisc = 20;
+        final int seniorDisc = 40;
 
         // scanner
 
@@ -19,10 +19,10 @@ public class BigliettoTreno {
         // chiedo quanti km
         System.out.print("Quanti Km vuoi percorrere ?");
         // salvo valore in variabile
-        desireKm = scan.nextInt();
+        desireKm = scan.nextInt(); // Integer.parseInt(scan.nextLine());
         // chiedo età passeggero
         System.out.print("Quanti anni hai ?");
-        userAge = scan.nextInt();
+        userAge = scan.nextInt(); // Integer.parseInt(scan.nextLine());
         // calcolo il prezzo del biglietto senza sconto
         double PriceWoDisc = priceXKm * desireKm;
         System.out.println(PriceWoDisc);
